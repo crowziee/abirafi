@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="Login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+<body>
+    <div class="login-container">
+        <form action="">
+            <h2>Login</h2>
+            <div id="name-box" class="input-box">
+                <input id="name" type="text" />
+                <label for="name" id="label-name">Username</label>
+                <i class="fa fa-user fa-sm"></i>
+            </div>
+            <div id="error-name" class="error-validation"></div>
+            <br />
+
+            <div id="password-box" class="input-box">
+                <input id="password" type="password" />
+                <label for="password" id="label-password">Password</label>
+                <i id="toggle-password" class="fa fa-eye fa-sm"></i>
+            </div>
+            <div id="error-password" class="error-validation"></div>
+            <br />
+
+            <div class="wrapper-forget">
+                <label><input type="checkbox" />Remember Me</label>
+                <a href="">Forgot your password</a>
+            </div>
+
+            <button onClick="return loginValidation()" type="Submit">
+                Sign In
+                <a href="home.html" > Sign In </a>
+            </button>
+
+            <p class="register">Don't have an account? <a href="Register.html">Register</a></p>
+        </form>
+    </div>
+</body>
+<script src="Login.js"></script>
+</html>

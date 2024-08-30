@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    .fa, .fa-bars{
+        font-size: 3em;
+        display: none;
+    }
+
+    @media screen and (max-width: 768px) {
+       .fa, .fa-bars{
+        display: block;
+       }
+  
+    }
+</style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="">Abi Rafi</a>
+            </div>
+            <div class="nav-right">
+                <ul class="">
+                    <li class="dropdown">
+                        <ul class="dropdown-menu">
+                            <li><a href="#">/about</a></li>
+                            <li><a href="#skill">/skills</a></li>
+                            <li><a href="#projects">/project</a></li>
+                            <li><a href="#contacts">/contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" ></i>
+        </nav>
+    </header>
+
+    <section class="sect" id="about">
+        <img align="left" src="potrait.jpeg" alt="">
+        <div class="about">
+            <h1>About Me</h1>
+            <p>Hello! My name is <span>Abi Rafi</span> an Information Student in BINUS University. <br>I am interested
+                in learning more about Front-end development and <br>UI/UX. My main focus these days are learn more about HTML, CSS and JS </p>
+            <h3>|</h3>
+            <p>When i'm not at the computer, i'm usually playing with my cats,<br> hanging out with some friends, or
+                running to burn some calories.</p>
+        </div>
+
+    </section>
+
+
+    <section id="skill" class="skills" >
+        <div>
+            <h1>Skills</h1>
+        </div>
+        <div class="skillbor">
+            <div class="skill1">
+                <h1>Front-end Development</h1>
+                <p>Able to use HTML, CSS, and a bit of JS.</p>
+            </div>
+            <h3>|</h3>
+            <div class="skill2">
+                <h1>UI/UX Design</h1>
+                <p>Able to create appealing and user friendly design.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="project" id="projects">
+        <h1>Projects</h1>
+        <div class="proj">
+            <div class="proj1">
+                <a href="projectwbad/home.html">wHeel HUB</a>
+                <p>Car Dealer Website</p>
+            </div>
+            <div class="proj2">
+                <a href="https://www.figma.com/design/bTtrWDbd7A3SPa3urPNpYl/PROJECT-UX-LAB?node-id=0-1&t=2OCfRgVmaMVkm4En-1">Figma Physio</a>
+                <p>Physiotherapy Application</p>
+            </div>
+            <div class="proj3">
+                <a href="Project WBA Lecture/refill.html">ReFill Website</a>
+                <p>Water re-fill Website</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contacts">
+        <h1>Contact</h1>
+        <div class="cont">
+            <div class="cont1">
+                <a href="https://www.linkedin.com/in/abi-rafi-957002267">LinkedIn</a>
+            </div>
+            <div class="cont2">
+                <a href="https://www.instagram.com/abirafiii/">Instagram</a>
+            </div>
+            <div class="cont3">
+                <p>abirafi03@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Abi Rafi 2024</p>
+    </footer>
+
+     
+
+    <script>
+        const bars = document.querySelector("nav .fa-bars");
+        const ul = document.querySelector("nav .nav-right")
+        bars.addEventListener('click', () => {
+            ul.classList.toggle('show')
+        })
+
+
+    </script>
+</body>
+
+</html>

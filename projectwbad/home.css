@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box; 
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden; 
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 2%;
+  background-color: #373a40;
+}
+
+.logo {
+  color: #dc5f00;
+  cursor: pointer;
+}
+
+.h-word {
+  color: black;
+}
+
+.nav-right ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-right ul li {
+  position: relative;
+}
+
+.nav-right ul li a {
+  display: block;
+  padding: 20px 25px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+}
+
+.nav-right ul li a:hover {
+  color: black;
+}
+
+.nav-right ul li .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #eee;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.nav-right ul li .dropdown-menu li {
+  display: block;
+}
+
+.nav-right ul li .dropdown-menu li a {
+  padding: 12px 16px;
+  color: black;
+}
+
+.nav-right ul li .dropdown-menu li a:hover {
+  background-color: #ddd;
+}
+
+.nav-right ul li:hover .dropdown-menu {
+  display: block;
+}
+
+#register {
+  border-radius: 10px;
+  background-color: #dc5f00;
+}
+
+.down-arrow {
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.slideshow {
+  margin-top: 68px; 
+  flex: 1;
+}
+
+.sub-slide-1 {
+  background-color: #686d76;
+  padding: 40px;
+  position: relative; 
+}
+
+.sub-slide-2 {
+  background-color: #dc5f00;
+}
+
+.biar-tengah {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.slide-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden; 
+}
+
+.dots-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 12px;
+  margin-top: -35px;
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+  transition: 0.8s ease;
+  border-radius: 0 2px 2px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.car-name {
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 8px 12px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .3} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 240px) {
+  .prev, .next, .text {font-size: 12px}
+}
+
+.button {
+  text-align: center;
+}
+
+.join-button {
+  padding: 15px 30px;
+  font-size: 20px;
+  background-color: #717171;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.join-button:hover {
+  background-color: #686d76;
+}
+
+footer {
+  background-color: #373a40;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 2px solid #ddd;
+}
+
+.footer-word {
+  color: #ddd;
+}
+
+.center-content { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1040px){
+  .nav-right ul li a {
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+}
+

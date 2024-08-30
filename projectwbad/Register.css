@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('Assets/joinUsSectionBaner.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.register-container {
+    display: flex;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    border-radius: 10px;
+    padding: 40px;
+    backdrop-filter: blur(10px);
+    border: rgba(255, 255, 255, 0.5) 1px solid;
+    color: #fff;
+    width: 100%;
+    max-width: 450px;
+    align-items: center;
+    margin: 20px;
+}
+
+.register-container form {
+    width: 100%;
+}
+
+.register-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.register-container a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.register-container button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: #fff;
+    color: #000;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+.input-box {
+    position: relative;
+    border-bottom: rgba(255, 255, 255, 0.5) 1px solid;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.input-box i {
+    position: absolute;
+    color: #fff;
+    right: 15px;
+    font-size: 15px;
+}
+
+.input-box label {
+    position: absolute;
+    left: 5px;
+    background: transparent;
+    transition: 0.2s;
+    color: #fff;
+    pointer-events: none;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+}
+
+.input-box input:focus + label,
+.input-box input.filled + label {
+    top: -15px;
+    font-size: 12px;
+}
+
+.radio-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.radio-button input[type="radio"] {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    outline: none;
+    position: relative;
+}
+
+.radio-button input[type="radio"]::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #0f1014;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s, height 0.2s;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.policy {
+    font-size: small;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.radio-wrapper {
+    margin: 15px 0px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 15px 0;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#dob-box {
+    position: relative;
+    border-bottom: rgba(255, 255, 255, 0.5) 1px solid;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+#dob-box i {
+    position: absolute;
+    color: #fff;
+    z-index: 1111;
+    right: 15px;
+    font-size: 15px;
+}
+
+#dob-box label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1111;
+    background: transparent;
+    pointer-events: none;
+}
+
+#dob-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding-right: 30px;
+    color: #fff;
+}
+
+#dob-box input:focus + label,
+#dob-box input:not(:placeholder-shown) + label {
+    padding-top: 18px;
+    top: -10px;
+    left: 0px;
+    font-size: 16px;
+    color: #fff;
+}
+
+#dob-box input::placeholder {
+    color: transparent
+}
+
+#label-policy a {
+    color: aqua;
+}
+
+.login-button a {
+    color: aqua;
+    text-decoration: underline;
+}
+
+.error-validation {
+    color: red;
+    font-size: small;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .register-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .register-container h2 {
+        font-size: 1.5em;
+    }
+
+    .register-container button {
+        font-size: 0.9em;
+    }
+
+    .radio-button {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .register-container {
+        padding: 15px;
+    }
+
+    .register-container h2 {
+        font-size: 1.2em;
+    }
+
+    .register-container button {
+        font-size: 0.8em;
+    }
+
+    .input-box {
+        padding: 5px;
+    }
+
+    .input-box label {
+        font-size: 0.9em;
+    }
+
+    .radio-button {
+        gap: 5px;
+    }
+}

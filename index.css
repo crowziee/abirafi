@@ -1,0 +1,379 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-padding-top: 200px; /* Adjust this value based on the height of your fixed header */
+}
+
+
+body {
+  /* background-color: ; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: rgb(2, 21, 38);
+}
+
+header {
+  width: 100%;
+  background-color: rgb(110, 172, 218);
+  /* background-color: rgb(110, 172, 218); */
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 3%;
+  background-color: rgb(2, 21, 38);
+
+}
+
+
+.nav-left a {
+  text-decoration: none;
+  color: rgb(226, 226, 182);
+  font-size: 40px;
+  font-weight: lighter;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  border-radius: 10px;
+
+}
+
+.nav-left a:hover {
+  transform: scale3d();
+}
+
+.logo {
+  color: #dc5f00;
+  cursor: pointer;
+}
+
+/* .h-word {
+    color: black;
+  } */
+
+.nav-right ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-right ul li {
+  position: relative;
+}
+
+.nav-right ul li a {
+  display: block;
+  padding: 20px 25px;
+  color: rgb(226, 226, 182);
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-right ul li a:hover {
+  color: rgb(110, 172, 218);
+  transform: scale(1.5);
+  transition: 1.5ms;
+}
+
+.sect {
+  justify-content: space-around;
+  display: flex;
+  /* text-align: center; */
+  padding: 300px;
+  /* background: url('potrait.jpeg') no-repeat center center/cover; */
+
+}
+
+.about {
+  padding-left: 50px;
+}
+
+.about h3{
+  color: rgb(2, 21, 38);
+}
+
+.sect a {
+  text-decoration: none;
+  color: rgb(226, 226, 182);
+}
+
+.sect span {
+  color: rgb(226, 226, 182);
+}
+
+.sect a:hover {
+  color: rgb(110, 172, 218);
+}
+
+.sect h1 {
+  color: rgb(226, 226, 182);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sect p {
+  color: rgb(110, 172, 218);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+}
+
+.sect img {
+  height: 300px;
+  width: 400px;
+  border-style: solid;
+
+}
+
+.skills {
+  justify-content: space-around;
+  display: flex;
+  /* text-align: center; */
+  /* padding: 100px; */
+  /* background: url('potrait.jpeg') no-repeat center center/cover; */
+
+}
+
+.skills h1 {
+  color: rgb(226, 226, 182);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.skills p {
+  color: rgb(110, 172, 218);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+}
+
+.skillbor h3{
+  color: rgb(2, 21, 38);
+}
+
+.skill1 h1{
+  font-weight: lighter;
+}
+
+.skill2 h1{
+  font-weight: lighter;
+}
+
+.project{
+  /* align-items: center; */
+  justify-content: space-around;
+  display: flex;
+  /* text-align: center; */
+  /* padding: 100px; */
+  margin-top: 200px;
+  margin-right: 200px;
+}
+
+
+.project h1{
+  color: rgb(226, 226, 182);
+  margin-left: 50px;
+}
+
+.proj{
+  margin-left: 100px;
+  margin-bottom: 200px;
+}
+
+.proj1 p{
+  color: rgb(110, 172, 218);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.proj1 a{
+  text-decoration: none;
+  font-size: 22px;
+  color: rgb(226, 226, 182);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+}
+
+.proj1 a:hover{
+  color: rgb(110, 172, 218);
+}
+
+.proj2{
+  margin-top: 30px;
+}
+
+.proj2 a{
+  text-decoration: none;
+  font-size: 22px;
+  color: rgb(226, 226, 182);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+}
+
+.proj2 a:hover{
+  color: rgb(110, 172, 218);
+}
+
+.proj2 p{
+  color: rgb(110, 172, 218);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.proj3{
+  margin-top: 30px;
+}
+
+.proj3 a{
+  text-decoration: none;
+  font-size: 22px;
+  color: rgb(226, 226, 182);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+}
+
+.proj3 a:hover{
+  color: rgb(110, 172, 218);
+}
+
+.proj3 p{
+  color: rgb(110, 172, 218);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact{
+  /* align-items: center; */
+  justify-content: space-around;
+  display: flex;
+  /* text-align: center; */
+  /* padding: 100px; */
+  margin-top: -00px;
+  margin-right: 200px;
+}
+
+.contact h1{
+  color: rgb(226, 226, 182);
+  margin-left: 35px;
+}
+
+.cont{
+  margin-left: 100px;
+  margin-bottom: 200px;
+}
+
+.cont1 a{
+  text-decoration: none;
+  color: rgb(226, 226, 182);
+  font-style: italic;
+}
+
+.cont1 a:hover{
+  color: rgb(110, 172, 218);
+}
+
+.cont2{
+  margin-top: 30px;
+}
+
+.cont2 a{
+  text-decoration: none;
+  color: rgb(226, 226, 182);
+  font-style: italic;
+}
+
+.cont2 a:hover{
+  color: rgb(110, 172, 218);
+}
+
+.cont3{
+  color: rgb(226, 226, 182);
+  margin-top: 30px;
+}
+
+footer{
+  /* background-color: rgb(226, 226, 182); */
+  height: 1000px;
+  text-align: center;
+}
+
+footer p{
+  color: rgb(226, 226, 182);
+}
+
+
+.fa-bars{
+  color: white;
+  display: none;
+}
+
+.show{
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 1024px) {
+  .sect{
+    flex-direction: column;
+    gap: 2em;
+    padding: 10em;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-right{
+    /* border: 2px solid red; */
+    position: absolute;
+    z-index: 9999;
+    right: 0;
+    top: 0;
+    margin-top: 5em;
+    transform: translateX(100%);
+    transition: .3s;
+  }
+  .nav-right ul{
+    flex-direction: column;
+    background-color: grey;
+  }
+  .show{
+    transform: translateX(0%);
+  }
+  
+}
+
+@media screen and (max-width: 640px) {
+  .sect img{
+    width: 10em;
+    height: 10em;
+  }
+  .sect{
+    padding: 5em;
+  }
+  .skills{
+    flex-direction: column;
+    padding: 2em;
+  }
+  .project{
+    flex-direction: column;
+    gap: 2em;
+    margin-left: -1em;
+  }
+  .project .proj{
+    padding: 0px;
+    margin-left: 3em;
+  }
+  .contact{
+    flex-direction: column;
+    padding: 2em;
+    gap: 2em;
+  }
+  .contact .cont{
+    margin-left: 0px;
+  }
+}
