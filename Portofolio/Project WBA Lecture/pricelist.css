@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #ffff;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.logo{
+    cursor: pointer;
+    margin-left: 8%;
+    color: black;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    border-radius: 5px;
+    align-items: center;
+    
+}
+
+.logo span{
+    color: #67b7f0;
+}
+
+.navbar{
+    background: linear-gradient(#2788cd, #67b7f0);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%
+}
+
+.navbar ul{
+    margin-right: 8%;
+}
+.navbar ul a{
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+}
+
+.nav-right a:hover{
+    color: #030a60;
+}
+
+.content h1{
+    color: #103551;
+    font-size: 85px;
+    margin-left: 30px;
+}
+
+.mid{
+    height: 500px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.detail{
+    align-items: center;
+    text-align: center;
+}
+
+.detail figcaption{
+    font-weight: bolder;
+    font-size: 32px;
+    gap: 300px;
+}
+
+
+
+
+.harga{
+    justify-content: space-around;
+    display: flex;
+    margin-top: 100px;
+    
+}
+
+.garis{
+    border: 1px solid black;
+}
+
+.table1{
+    display: flex;
+    border: solid black;
+    border-radius: 15px;
+    width: 300px;
+    height: 100px;
+    gap: 20px;
+}
+
+.galon{
+    padding-top:40px;
+    text-align: center;
+}
+
+.galon h2{
+    text-align:center;
+}
+
+.harga-galon{
+    padding-top:40px;
+    text-align: center;
+}
+
+
+.table2{
+    display: flex;
+    border: solid black;
+    border-radius: 15px;
+    width: 300px;
+    height: 100px;
+    gap: 20px;
+}
+
+.b330{
+    padding-top:40px;
+    text-align: center;
+}
+
+.harga330{
+    padding-top:40px;
+    text-align: center;
+}
+
+.harga1{
+    justify-content: space-around;
+    display: flex;
+    margin-top: 100px;
+}
+
+.table3{
+    display: flex;
+    border: solid black;
+    border-radius: 15px;
+    gap: 20px;
+    height: 100px;
+    width: 300px;
+}
+
+.b600{
+    padding-top:40px;
+    text-align: center;
+}
+.harga600{
+    padding-top:40px;
+    text-align: center;
+}
+
+
+.table4{
+    display: flex;
+    border: solid black;
+    border-radius: 15px;
+    gap: 20px;
+    width: 300px;
+    height: 100px;
+}
+
+.table1:hover, .table2:hover, .table3:hover, .table4:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.b1500{
+    padding-top:40px;
+    text-align: center;
+}
+
+.harga1500{
+    padding-top:40px;
+    text-align: center;
+}
+
+footer{
+    width: 100%;
+    height: 375px;
+    background-color: #67B7F0;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .img-logo{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.footelem{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footelem h4{
+    color: white;
+    font-weight: lighter;
+}
+
+.footelem p{
+    color: white;
+}
+
+.footelem h2{
+    color: white;
+}
+
+.donlot{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    align-items: end;
+}
+
+.donlot h1{
+    color: white;
+    display: flex;
+    justify-content: end;
+}
+
+.donlot img{
+    height: 100px;
+    width: 200px;
+    
+}
+
+
+
+
+
+
+
+
+

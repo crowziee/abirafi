@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="promotion.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <h2 class="logo">w <span class="h-word">H</span> e e l</h2>
+            </div>
+            <div class="nav-right">
+                <ul class="">
+                    <li><a href="home.html">HOME</a></li>
+                    <li class="dropdown">
+                        <a href="promotion.html">PROMOTION <img src="down_down_arrow.png" alt="down_down_arrow" class="down-arrow"></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="mirai.html">MIRAI</a></li>
+                            <li><a href="corolahb.html">COROLA HATCHBACK</a></li>
+                            <li><a href="corolahybrid.html">COROLA HYBRID</a></li>
+                            <li><a href="highlander.html">HIGHLANDER HYBRID</a></li>
+                            <li><a href="sienna.html">SIENNA</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="allcars.html">ALL CARS</a></li>
+                    <li><a href="AboutUs.html">ABOUT US</a></li>
+                    <li id="register"><a href="Register.html">REGISTER</a></li>
+                </ul>
+                </div>
+              <i class="fa fa-bars"></i>
+        </nav>
+    </header>
+
+      <section class="sect">
+        <h1>Promotion</h1>
+        <p>Get discount and freebies.</p>
+        <a href="#promos" class="promo-button">Explore Promotion</a>
+    </section>
+    <section id="promos" class="promos">
+        <h2>Featured</h2>
+        <div class="promo">
+            <img src="Assets/promotion_banner/2023_mirai.jpeg" alt="Promo 1">
+            <h3>2023 Toyota Mirai</h3>
+            <p>Get a discount when buying a 2023 Toyota Mirai with cash payment, discount up to 20 million.</p>
+        </div>
+        <div class="promo">
+            <img src="Assets/promotion_banner/2024_highlander_hybrid.jpeg" alt="Promo 2">
+            <h3>2024 Toyota Highlander Hybrid</h3>
+            <p>Free iPhone 15 with every purchase of a Toyota Highlander Hybrid. Until September 2024.</p>
+        </div>
+        <div class="promo">
+            <img src="Assets/promotion_banner/2024_sienna.jpeg" alt="Promo 3">
+            <h3>2024 Toyota Sienna</h3>
+            <p>Discount of 15 million for every 2024 Toyota Sienna purchase until July 2.</p>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="footer-word">
+        <strong><span class="footer-logo">w</span> H <span class="footer-logo">e e l</span> &copy; 2024</strong>
+        <p>Your Best Automotive Online Shopping Platform Since 1995</p>
+    </div>
+</footer>
+
+<script>
+    const bars = document.querySelector("nav .fa-bars");
+    const ul = document.querySelector("nav .nav-right ul")
+    bars.addEventListener('click', ()=>{
+      ul.classList.toggle('show')
+    })
+</script>
+</body>
+</html>
+
+        

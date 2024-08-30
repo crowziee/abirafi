@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box
+}
+
+body{
+    background-color: rgb(104, 109, 118);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+
+
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 3%;
+    background-color: #373a40;
+  }
+  
+  .logo {
+    color: #dc5f00;
+    cursor: pointer;
+  }
+  
+  .h-word {
+    color: black;
+  }
+  
+  .nav-right ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-right ul li {
+    position: relative;
+  }
+  
+  .nav-right ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .nav-right ul li a:hover {
+    color: black;
+  }
+
+  .nav-right ul li .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #eee;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+  }
+  
+  .nav-right ul li .dropdown-menu li {
+    display: block;
+  }
+  
+  .nav-right ul li .dropdown-menu li a {
+    padding: 12px 16px;
+    color: black;
+  }
+  
+  .nav-right ul li .dropdown-menu li a:hover {
+    background-color: #ddd;
+  }
+  
+  .nav-right ul li:hover .dropdown-menu {
+    display: block;
+  }
+  
+  #register{
+    border-radius: 10px;
+    background-color: #dc5f00;
+  }
+  .down-arrow {
+    width: 12px;
+    height: 12px;
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+
+.sect {
+    text-align: center;
+    padding: 475px 500px;
+    background: url('Assets/promotion_banner/2024_corola_hybrid.jpeg') no-repeat center center/cover;
+    
+}
+
+.sect h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.sect p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.promo-button {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.promo-button:hover{
+    background-color: black;
+}
+
+.promos {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+.promos h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.promos .promo {
+    display: inline-block;
+    width: 30%;
+    margin: 1rem;
+    vertical-align: top;
+}
+
+.promos .promo img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.promos .promo img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.promos .promo h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.promos .promo p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+footer {
+  background-color: #373a40;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 2px solid #ddd;
+}
+
+.footer-word {
+  color: #ddd;
+}
+.fa, .fa-bars{
+    font-size: 2em;
+    color: white;
+    z-index: 99999;
+    display: none;
+  }
+  
+  nav .nav-right .show{
+    transform: translateX(0);
+    transition: .3s;
+    transform: translateY(8%);
+  }
+
+  @media only screen and (max-width:1024px){
+    nav, .nav-right ul li a{
+      font-size: .8em;
+    }
+  
+    main .judul{
+      font-size: 3em;
+    }
+    .sect{
+        padding: 20em 20em;
+    }
+    .sect h1{
+        width: 10em;
+        margin-left: -3em;
+    }
+    .promo-button{
+        width: 15em;
+        padding: .5em 1em;
+    }
+  }
+  
+  @media only screen and (max-width:768px){
+    nav, .nav-right ul li a{
+      font-size: .8em;
+    }
+  
+    nav{
+      padding: 3em;
+    }
+  
+    .fa, .fa-bars{
+      display: inline-block;
+    }
+  
+    .nav-right ul{
+      flex-direction: column;
+      background-color: grey;
+      padding: 2em;
+      position: absolute;
+      transform: translateY(20%);
+      right: 0;
+      transform: translateX(100%);
+    }
+  
+    .nav-right ul li .dropdown-menu {
+      transform: translateX(-10%);
+    }
+    
+    .sect{
+        padding: 15em 15em;
+    }
+    .sect h1{
+        width: 10em;
+        margin-left: -3em;
+    }
+    .promo-button{
+        width: 15em;
+        padding: .5em 1em;
+    }
+
+    .promos .promo{
+        width: 50%;
+    }
+  }
+   
+  
+  
+  @media only screen and (max-width:640px){
+  
+    .sect{
+        padding: 8em 8em;
+    }
+    .sect h1{
+        width: 10em;
+        font-size: 2em;
+        margin-left: -3em;
+    }
+    .promo-button{
+        width: 15em;
+        padding: .5em 1em;
+    }
+
+    .promos .promo{
+        width: 70%;
+    }
+  }

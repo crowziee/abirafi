@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <h2 class="logo">w <span class="h-word">H</span> e e l</h2>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li class="dropdown">
+                        <a href="promotion.html">PROMOTION <img src="down_down_arrow.png" alt="down_down_arrow" class="down-arrow"></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="mirai.html">MIRAI</a></li>
+                            <li><a href="corolahb.html">COROLA</a></li>
+                            <li><a href="corolahybrid.html">COROLA HYBRID</a></li>
+                            <li><a href="highlander.html">HIGHLANDER HYBRID</a></li>
+                            <li><a href="sienna.html">SIENNA</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="allcars.html">ALL CARS</a></li>
+                    <li><a href="AboutUs.html">ABOUT US</a></li>
+                    <li id="register"><a href="Register.html">REGISTER</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="slideshow">
+        <div class="container">
+            <div class="mySlides fade">
+                <div class="sub-slide-1">
+                    <div class="biar-tengah">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="Assets/23_bZ4X_XLE_WindChillPearl_2.png" class="slide-image"> 
+                    </div>
+                    <div class="dots-container">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+                </div>
+                <div class="sub-slide-2">
+                    <div class="biar-tengah">
+                        <div class="text-container">
+                            <div class="car-name"><strong>Toyota</strong></div>
+                            <div><h3>Toyota hybrids combine a gasoline engine with an electric motor for improved fuel efficiency and reduced emissions. 
+                                Featuring Hybrid Synergy Drive technology, they seamlessly switch between power sources. 
+                                Popular models include the Prius and Camry Hybrid, known for reliability, low operating costs, and environmental benefits.</h3></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="sub-slide-1">
+                    <div class="biar-tengah">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="Assets/2024HighlanderHybridToyota.png.webp" class="slide-image">
+                    </div>
+                    <div class="dots-container">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+                </div>
+                <div class="sub-slide-2">
+                    <div class="biar-tengah">
+                        <div class="text-container">
+                            <div class="car-name"><strong>Wind Chill Pearl</strong></div>
+                            <div><h3>Wind Chill Pearl is a luxurious, pearlescent white paint color offered by Toyota. 
+                                It gives vehicles a sophisticated and elegant appearance, enhancing their visual appeal with a shimmering finish that catches and reflects light beautifully. 
+                                This premium color option is often associated with higher-end models and adds a touch of refinement to any car.</h3></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="sub-slide-1">
+                    <div class="biar-tengah">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="Assets/joinUsSectionBaner.jpeg" class="slide-image">
+                    </div>
+                    <div class="dots-container">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+                </div>
+                <div class="sub-slide-2 center-content">
+                    <div class="biar-tengah">
+                        <div class="text-container">
+                            <h2>Click the button below to join us now!</h2>
+                            <div class="button">
+                                <button class="join-button"><a href="allcars.html">Join Us Now</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-word">
+            <strong><span class="footer-logo">w</span> H <span class="footer-logo">e e l</span> &copy; 2024</strong>
+            <p>Your Best Automotive Online Shopping Platform Since 1995</p>
+        </div>
+    </footer>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="./home.js"></script>
+</body>
+</html>

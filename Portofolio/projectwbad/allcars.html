@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Cars</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="allcars.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <h2 class="logo">w <span class="h-word">H</span> e e l</h2>
+            </div>
+            <div class="nav-right">
+                <ul class="">
+                    <li><a href="home.html">HOME</a></li>
+                    <li class="dropdown">
+                        <a href="promotion.html">PROMOTION <img src="down_down_arrow.png" alt="down_down_arrow" class="down-arrow"></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="mirai.html">MIRAI</a></li>
+                            <li><a href="corolahb.html">COROLA HATCHBACK</a></li>
+                            <li><a href="corolahybrid.html">COROLA HYBRID</a></li>
+                            <li><a href="highlander.html">HIGHLANDER HYBRID</a></li>
+                            <li><a href="sienna.html">SIENNA</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="allcars.html">ALL CARS</a></li>
+                    <li><a href="AboutUs.html">ABOUT US</a></li>
+                    <li id="register"><a href="Register.html">REGISTER</a></li>
+                </ul>
+                </div>
+              <i class="fa fa-bars"></i>
+        </nav>
+    </header>
+
+      <main>
+        <h1 class="judul">All Cars</h1>
+        <section class="car-list">
+            <figure>
+                <img src="Assets/product_card/2023_Mirai.jpeg" alt="mobil1">
+                <figcaption>2023 Toyota Mirai</figcaption>
+              </figure>
+              <figure>
+                <img src="Assets/product_card/2024_GR_Corolla.jpeg" alt="mobil2">
+                <figcaption>2024 Toyota GR Corolla</figcaption>
+              </figure>
+              <figure>
+                <img src="Assets/product_card/2024_grand_highlander.jpeg" alt="mobil3">
+                <figcaption>2024 Toyota Grand Highlander</figcaption>
+              </figure>
+              <figure>
+                <img src="Assets/product_card/2024_land_cruiser.jpeg" alt="mobil4">
+                <figcaption>2024 Toyota Land Cruiser</figcaption>
+              </figure>
+              <figure>
+                <img src="Assets/product_card/2024_prius_prime.jpeg" alt="mobil5">
+                <figcaption>2024 Toyota Prius Prime</figcaption>
+              </figure>
+              <figure>
+                <img src="Assets/product_card/2024_RAV4.jpeg" alt="mobil6">
+                <figcaption>2024 Toyota RAV4</figcaption>
+              </figure>
+              <figure>
+                <img src="Assets/product_card/2024_venza.jpeg" alt="mobil7">
+                <figcaption>2024 Toyota Venza</figcaption>
+              </figure>
+              <figure>
+                <img src="Assets/product_card/2025_Camry.jpeg" alt="mobil8">
+                <figcaption>2025 Toyota Camry</figcaption>
+              </figure>
+              </section>
+            <p>*A car that is not on display means it has been sold</p>
+    </main>
+
+    <footer>
+      <div class="footer-word">
+          <strong><span class="footer-logo">w</span> H <span class="footer-logo">e e l</span> &copy; 2024</strong>
+          <p>Your Best Automotive Online Shopping Platform Since 1995</p>
+      </div>
+  </footer>
+
+    <script>
+        const bars = document.querySelector("nav .fa-bars");
+        const ul = document.querySelector("nav .nav-right ul")
+        bars.addEventListener('click', ()=>{
+          ul.classList.toggle('show')
+        })
+    </script>
+</body>
+</html>
